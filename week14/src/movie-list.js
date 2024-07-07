@@ -9,13 +9,14 @@ class MovieList extends React.Component {
     state = {
         movies: [],
     };
-
+// Create movies state and props
     componentDidMount() {
         Movie.getMovie().then(movies => {
             this.setState({ movies });
         });
     }
 render(){
+    // render movies in in bootstrap grid stuff and display it based on id
     return (
         <div className='row'>
            <div className='col-6'> 

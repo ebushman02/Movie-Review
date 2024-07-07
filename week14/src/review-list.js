@@ -25,7 +25,9 @@ class ReviewList extends React.Component {
                     <div className='col-lg'>
                         {reviews.map(review => {
                             // Filter reviews by movieId
-                            if (review.movieId === movie.id) {
+                            if (review.movieId === movie.id)
+                                // compare the reviews movieId to the actual movie id
+                                {
                                 return <Review key={review.id} review={review} movieId={review.movieId} />;
                             }
                             return null; // Skip rendering if movieId doesn't match

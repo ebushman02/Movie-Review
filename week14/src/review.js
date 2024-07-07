@@ -4,7 +4,7 @@ import StarRating from './Stars';
 
 export default class Review extends React.Component {
     static url = 'https://6688a5410ea28ca88b85b20f.mockapi.io/reviews';
-
+// Basic Crud stuff
     static getReview() {
         return $.get(this.url);
     }
@@ -32,7 +32,7 @@ export default class Review extends React.Component {
 
     render() {
         const { review } = this.props; // Assuming review is passed as a prop
-
+// display the reviews
         return (
             <div>
             <div className='card' id={review.movieId}>

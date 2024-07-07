@@ -11,10 +11,11 @@ const StarRating = ({ onChange }) => {
     };
 
     const stars = [1, 2, 3, 4, 5];
+    //Set stars equal to an array ranging from 1 to 5
 
     return (
         <div>
-            
+            {/* map the stars so that onclick it selects the amount of stars currently hovered and changes the color */}
             {stars.map((star) => (
                 <span
                     key={star}

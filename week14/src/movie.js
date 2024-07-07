@@ -8,11 +8,11 @@ import ReviewInput from './review-form';
 export default class Movie extends React.Component {
    
     static url = 'https://6688a5410ea28ca88b85b20f.mockapi.io/movie'
-
+// link to movie api
     static getMovie() {
         return $.get(this.url);
     }
-
+// Basic CRUD stuff
     static createMovie(title, runtime, rating, cover) {
         return $.post(this.url, { title, runtime, rating, cover });
     }
@@ -36,8 +36,8 @@ export default class Movie extends React.Component {
     
 
     render() {
-        const { movie } = this.props; // Assuming review is passed as a prop
-
+        const { movie } = this.props; // Movie is passed as a prop
+// Render a styled movie based off of the api
         return(
         <div className='row'>
            <div className='col-lg'>
@@ -58,6 +58,7 @@ export default class Movie extends React.Component {
            
             </div>
             <div className='card-body'>
+                {/* Add Review List stuff */}
             <ReviewList movie={movie} />
             </div>
             
