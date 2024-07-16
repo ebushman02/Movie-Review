@@ -11,3 +11,31 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+#nav-elements{
+  list-style-type: none;
+  width: 100%;
+  background-color: rgb(6, 6, 122);
+  height: 50px;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  position: relative;
+}
+li{
+  display: inline;
+  border-style: solid;
+  border-color: black;
+  border-width: 2px;
+  padding-left: 6px;
+  padding-right: 6px;
+  margin-left: none;
+  border-left-width: 1px;
+  border-right-width: 1px;
+  padding-bottom: 11px;
+  padding-top: 9.5px;
+}
+#title{
+  color: white;
+  font-weight: bold;
+  margin-left: 2%;
+}

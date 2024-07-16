@@ -1,14 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
-import Review from './review';
-import ReviewList from './review-list';
-import ReviewInput from './review-form';
 import 'bootstrap/dist/css/bootstrap.css';
-import Movie from './movie';
 import MovieList from './movie-list'
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

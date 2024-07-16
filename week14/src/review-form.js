@@ -135,12 +135,17 @@ class ReviewInput extends Component {
                                     ))}
                                 </select>
                             </div>
+                            <div>
+
+                            </div>
                         </div>
-                        <div className='card-footer'>
-                            <button type="submit">Submit Review</button>
+                            <div className='card-footer'>
+                            <button type="submit" className='btn btn-primary'>Submit Review</button>
                         </div>
                     </form>
+                    
                 </div>
+                
             </div>
         );
     }

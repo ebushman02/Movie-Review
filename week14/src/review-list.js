@@ -1,7 +1,6 @@
 import React from 'react';
 import Review from './review';
-import ReviewInput from './review-form';
-import Movie from './movie';
+
 
 class ReviewList extends React.Component {
     state = {
